@@ -1,6 +1,4 @@
-FROM alpine:latest
-
-RUN apt-get update -y && apt-get install -y curl socat
+FROM alpine:socat
 
 RUN curl -L https://github.com/hasura/graphql-engine/raw/stable/cli/get.sh | bash
 

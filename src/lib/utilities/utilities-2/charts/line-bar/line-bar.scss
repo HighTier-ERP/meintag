@@ -1,0 +1,68 @@
+.chart-line{
+    position: relative;
+    .background{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      min-height: 300px;
+    }
+    .bar-items{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      min-height: 300px;
+      width: 100%;
+    }
+    .bar-item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .widget-section__title {
+        width: 100%;
+        max-width: 200px;
+        min-width: 200px;
+        text-align: left;
+      }
+      .bar-wrapper {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+      }
+    
+      .bar {
+        width: var(--bar-width);
+        background-color: var(--bar-color);
+        padding: 0.25rem 0.5rem;
+        height: 36px;
+      }
+      .last-bar{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    
+      .chart-lines{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        min-height: 300px;
+        .column{
+          border-left: var(--mtm-border-default);
+          display: flex;
+          height: 100%;
+          align-items: flex-end;
+          justify-content: flex-start;
+          padding-left: 8px;
+          width: 10%;
+          min-height: 300px;
+        }
+      }
+    }
+  }

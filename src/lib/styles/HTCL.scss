@@ -1,0 +1,44 @@
+// Variables
+@import '_variables.scss';
+
+// Overall mixins
+@import 'mixins/index';
+
+// Overall layout
+@import 'utilities/index';
+@import 'components/index';
+
+body {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: var(--main-theme-font-family);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	min-height: 100vh;
+	background: var(--main-theme-background-color);
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}

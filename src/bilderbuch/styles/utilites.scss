@@ -1,0 +1,101 @@
+/* DOCUMENT INFORMATION
+	- Document: Utility Classes
+*/
+
+.next-dashboard__row--full-width {
+  display: flex;
+  gap: 40px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.fade {
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.flex-row {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  @media screen and (max-width: 1500px) {
+    gap: 10px !important;
+  }
+  @media screen and (max-width: 600px) {
+    gap: 16px !important;
+  }
+}
+
+.border-bottom {
+  border-bottom: 0.1px solid #fef5e6;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.hide-for-desktop {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.show-for-desktop {
+  display: none;
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { HighTierIcon } from "../../../assets";
 import {
   ArrowCircleDown,
   ArrowCircleRight,

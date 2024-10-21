@@ -1,5 +1,0 @@
-export { default as AuditorWidgets } from './auditor-widgets'
-export { default as BoardWidgets } from './board-widgets'
-export { default as CeoWidgets } from './ceo-widgets'
-export { default as CfoWidgets } from './cfo-widgets'
-export { default as CsioWidgets } from './ciso-widgets'

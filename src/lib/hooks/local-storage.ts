@@ -1,22 +1,21 @@
-import { WINDOW } from '../services'
 import { useState } from 'react'
 
 export const clearLocalStorage = () => {
-  WINDOW.localStorage.clear()
+  window.localStorage.clear()
 }
 export const resetStorage = () => {
-  WINDOW.localStorage.setItem('access_token', null)
-  WINDOW.localStorage.setItem('client_id', null)
-  WINDOW.localStorage.setItem('original_client_id', null)
-  WINDOW.localStorage.setItem('user_id', null)
-  WINDOW.localStorage.setItem('refresh_token', null)
-  WINDOW.localStorage.setItem('permission_set', null)
-  WINDOW.localStorage.setItem('client_keys', null)
-  WINDOW.localStorage.setItem('default_control_sets', null)
-  WINDOW.localStorage.setItem('username', null)
-  WINDOW.localStorage.setItem('is_in_imposter', null)
-  WINDOW.localStorage.setItem('isDefaulControlSet', null)
-  WINDOW.localStorage.setItem('current_set_key', null)
+  window.localStorage.setItem('access_token', null)
+  window.localStorage.setItem('client_id', null)
+  window.localStorage.setItem('original_client_id', null)
+  window.localStorage.setItem('user_id', null)
+  window.localStorage.setItem('refresh_token', null)
+  window.localStorage.setItem('permission_set', null)
+  window.localStorage.setItem('client_keys', null)
+  window.localStorage.setItem('default_control_sets', null)
+  window.localStorage.setItem('username', null)
+  window.localStorage.setItem('is_in_imposter', null)
+  window.localStorage.setItem('isDefaulControlSet', null)
+  window.localStorage.setItem('current_set_key', null)
 }
 
 const useLocalStorage = (key: any, defaultValue: any) => {
@@ -24,7 +23,7 @@ const useLocalStorage = (key: any, defaultValue: any) => {
   // localStorage value in state
   const [localStorageValue, setLocalStorageValue] = useState(() => {
     try {
-      const value = WINDOW.localStorage.getItem(key)
+      const value = window.localStorage.getItem(key)
       // If value is already present in
       // localStorage then return it
 
@@ -33,11 +32,11 @@ const useLocalStorage = (key: any, defaultValue: any) => {
       if (value) {
         return JSON.parse(value)
       } else {
-        WINDOW.localStorage.setItem(key, JSON.stringify(defaultValue))
+        window.localStorage.setItem(key, JSON.stringify(defaultValue))
         return defaultValue
       }
     } catch (error) {
-      WINDOW.localStorage.setItem(key, JSON.stringify(defaultValue))
+      window.localStorage.setItem(key, JSON.stringify(defaultValue))
       return defaultValue
     }
   })
@@ -51,7 +50,7 @@ const useLocalStorage = (key: any, defaultValue: any) => {
     } else {
       newValue = valueOrFn
     }
-    WINDOW.localStorage.setItem(key, JSON.stringify(newValue))
+    window.localStorage.setItem(key, JSON.stringify(newValue))
     setLocalStorageValue(newValue)
   }
   return [localStorageValue, setLocalStorageStateValue]

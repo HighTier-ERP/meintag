@@ -1,5 +1,0 @@
-export { default as LoadingLogin } from './loading-login/loading-login'
-export { default as LoadingMesssages } from './loading-messages/LoadingMessages'
-export { default as LoadingSubmit } from './loading-submit/LoadingSubmit'
-export { default as CircularProgress } from './circular-progress'
-export { default as Loading } from './loading/Loading'

@@ -1,7 +1,6 @@
 import { ArrowCircleDown } from "@untitled-ui/icons-react";
 import classNames from "classnames";
 
-import { Navigation, InformationPage } from "../bilderbuch/components";
 import { HighTierIcon } from "../assets";
 import {
   HtclLayout,
@@ -17,16 +16,6 @@ import { useState } from "react";
 const Home = () => {
   const [canvasOpen, setCanvasOpen] = useState<any>(
     localStorage.getItem("canvasOpen")
-  );
-  const [activeSection, setActiveSection] = useState<any>(
-    localStorage.getItem("activeSection")
-      ? localStorage.getItem("activeSection")
-      : "null"
-  );
-  const [activeComponent, setActiveComponent] = useState<any>(
-    localStorage.getItem("activeComponent")
-      ? localStorage.getItem("activeComponent")
-      : "null"
   );
   const [deviceSize] = useState<any>("unset");
 
@@ -85,12 +74,6 @@ const Home = () => {
                   deviceSize !== "unset" && "canvas-full"
                 )}
               >
-                {activeComponent === "null" && activeSection === "null" && (
-                  <InformationPage year={year} />
-                )}
-                {activeComponent === null && activeSection === null && (
-                  <InformationPage year={year} />
-                )}
               </div>
               <DocumentCard
                 componentTitle="Accordions"

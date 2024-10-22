@@ -25,6 +25,7 @@ const CheckBox = ({
       )}
       onClick={onChange}
       onKeyDown={onChange}
+      data-testid={'checkbox'}
       role="button"
       tabIndex={0}
     >

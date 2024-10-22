@@ -75,12 +75,6 @@ const Home = () => {
                   Component Library
                 </h2>
               </span>
-              <Navigation
-                activeSection={activeSection}
-                setActiveSection={setActiveSection}
-                activeComponent={activeComponent}
-                setActiveComponent={setActiveComponent}
-              />
             </aside>
           }
           childrenB={

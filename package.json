@@ -58,7 +58,7 @@
   "bugs": {
     "url": "https://github.com/HighTier-ERP/meintag/issues"
   },
-  "homepage": "https://HighTier-ERP.github.io/meintag",
+  "homepage": "https://HighTier-ERP.github.io/meintag/",
   "dependencies": {
     "@babel/runtime": "^7.24.5",
     "@react-pdf/renderer": "^3.4.4",

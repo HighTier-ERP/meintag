@@ -35,11 +35,12 @@ const CheckBox = ({
           checkBoxClasses ? "" : "bg-gray-2"
         )}
       >
+        {selected ?
         <CheckIcon
           className={`checkbox-tick ${
             selected ? "selected-checkbox-tick" : ""
           }`}
-        />
+        />: null}
       </div>
       <div className="-text f-w-500 px-4">{text}</div>
       <input

@@ -37,8 +37,7 @@ const App = () => {
 
   const [activeId, setActiveId] = useState("accord1");
   const [showPassword, setShowPassword] = useState(false);
-  const [step] = useState<any>(1);
-  const [stepValue, setStepValue] = useState(null);
+  const [stepValue, setStepValue] = useState<any>(1);
 
   const year = new Date().getFullYear();
 
@@ -112,9 +111,9 @@ const App = () => {
                 dropdown element. Each item can "expand" or hide and show
                 content that is associated with a particular accordion
                 element.`}
-                version={'1.1.0'}
-                datePublished={'12/30/2021'}
-                dateUpdated={'10/21/2024'}
+                version={"1.1.0"}
+                datePublished={"12/30/2021"}
+                dateUpdated={"10/21/2024"}
               >
                 <div className="card p-30px">
                   <p className="mb-20px f-w-500">
@@ -207,18 +206,18 @@ const App = () => {
               <DocumentCard
                 componentTitle="Calendar"
                 componentSummary={`test...`}
-                version={'1.1.0'}
-                datePublished={'12/30/2021'}
-                dateUpdated={'10/21/2024'}
+                version={"1.1.0"}
+                datePublished={"12/30/2021"}
+                dateUpdated={"10/21/2024"}
               >
                 <Calendar />
               </DocumentCard>
               <DocumentCard
                 componentTitle="CheckBox"
                 componentSummary={`test...`}
-                version={'1.1.0'}
-                datePublished={'12/30/2021'}
-                dateUpdated={'10/21/2024'}
+                version={"1.1.0"}
+                datePublished={"12/30/2021"}
+                dateUpdated={"10/21/2024"}
               >
                 <CheckBox
                   text="Show Password"
@@ -232,44 +231,40 @@ const App = () => {
               <DocumentCard
                 componentTitle="Radio Button"
                 componentSummary={`test...`}
-                version={'1.1.0'}
-                datePublished={'12/30/2021'}
-                dateUpdated={'10/21/2024'}
+                version={"1.1.0"}
+                datePublished={"12/30/2021"}
+                dateUpdated={"10/21/2024"}
               >
                 <div className="flex flex-row">
                   <div className="mb-2rem">
                     <RadioBtn
-                      value={step.input1Value}
+                      value={1}
                       selected={stepValue}
-                      text={step.input1Label}
-                      onChange={() => setStepValue(step.input1Value)}
+                      onChange={() => setStepValue(1)}
                       groupName="radios"
                     />
                   </div>
                   <div className="mb-2rem">
                     <RadioBtn
-                      value={step.input2Value}
+                      value={2}
                       selected={stepValue}
-                      text={step.input2Label}
-                      onChange={() => setStepValue(step.input2Value)}
+                      onChange={() => setStepValue(2)}
                       groupName="radios"
                     />
                   </div>
                   <div className="mb-2rem">
                     <RadioBtn
-                      value={step.input3Value}
+                      value={3}
                       selected={stepValue}
-                      text={step.input3Label}
-                      onChange={() => setStepValue(step.input3Value)}
+                      onChange={() => setStepValue(3)}
                       groupName="radios"
                     />
                   </div>
                   <div className="mb-2rem">
                     <RadioBtn
-                      value={step.input4Value}
+                      value={4}
                       selected={stepValue}
-                      text={step.input4Label}
-                      onChange={() => setStepValue(step.input4Value)}
+                      onChange={() => setStepValue(4)}
                       groupName="radios"
                     />
                   </div>

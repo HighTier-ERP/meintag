@@ -33,7 +33,7 @@ const App = () => {
       ? localStorage.getItem("activeComponent")
       : "null"
   );
-  const [deviceSize, setDeviceSize] = useState<any>("unset");
+  const [deviceSize] = useState<any>("unset");
 
   const [activeId, setActiveId] = useState("accord1");
   const [showPassword, setShowPassword] = useState(false);

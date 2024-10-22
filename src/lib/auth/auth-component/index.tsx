@@ -160,12 +160,12 @@ const Auth = ({
   welcomeMessageSubContent,
   maxWidthClass,
 }: any) => {
-  const { isLoggedIn, setIsLoggedIn } = useContext(sessionContext);
+  const { isLoggedIn, setIsLoggedIn } = useContext<any>(sessionContext);
   const [showPasswordInput, setShowPasswordInput] = useState(false);
 
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
-  const [message, setMessage] = useState({ type: "", content: "" });
+  const [message, setMessage] = useState<any>({ type: "", content: "" });
 
   const { user, signIn } = useUser();
   const [userStatus] = useState("ONLINE");

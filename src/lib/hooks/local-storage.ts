@@ -4,18 +4,18 @@ export const clearLocalStorage = () => {
   window.localStorage.clear()
 }
 export const resetStorage = () => {
-  window.localStorage.setItem('access_token', null)
-  window.localStorage.setItem('client_id', null)
-  window.localStorage.setItem('original_client_id', null)
-  window.localStorage.setItem('user_id', null)
-  window.localStorage.setItem('refresh_token', null)
-  window.localStorage.setItem('permission_set', null)
-  window.localStorage.setItem('client_keys', null)
-  window.localStorage.setItem('default_control_sets', null)
-  window.localStorage.setItem('username', null)
-  window.localStorage.setItem('is_in_imposter', null)
-  window.localStorage.setItem('isDefaulControlSet', null)
-  window.localStorage.setItem('current_set_key', null)
+  window.localStorage.setItem('access_token', '')
+  window.localStorage.setItem('client_id', '')
+  window.localStorage.setItem('original_client_id', '')
+  window.localStorage.setItem('user_id', '')
+  window.localStorage.setItem('refresh_token', '')
+  window.localStorage.setItem('permission_set', '')
+  window.localStorage.setItem('client_keys', '')
+  window.localStorage.setItem('default_control_sets', '')
+  window.localStorage.setItem('username', '')
+  window.localStorage.setItem('is_in_imposter', '')
+  window.localStorage.setItem('isDefaulControlSet', '')
+  window.localStorage.setItem('current_set_key', '')
 }
 
 const useLocalStorage = (key: any, defaultValue: any) => {

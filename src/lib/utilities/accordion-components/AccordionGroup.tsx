@@ -1,5 +1,3 @@
-//PACKAGE IMPORTS
-import React from 'react';
 
 //COMPONENT DESCRIPTION
 /*----------------------------------------------------------------------------*/

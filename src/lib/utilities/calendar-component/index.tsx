@@ -121,7 +121,7 @@ const RenderCells = ({ currentMonth, selectedDate, setSelectedDate }: any) => {
 };
 
 const Calendar = () => {
-  const [currentMonth, setCurrentMonth] = useState(new Date());
+  const [currentMonth, setCurrentMonth] = useState<any>(new Date());
   const [selectedDate, setSelectedDate] = useState(new Date());
   return (
     <div className="calendar-component">
